@@ -10,5 +10,5 @@ data class SlotsDTO (
     @JsonProperty("timestamp") var timestamp: String? = null,
     @JsonProperty("totalSlots") var totalSlots: Int? = null,
     @JsonProperty("freeSlots") var freeSlots: Int? = null
-    ) {
+) {
 }

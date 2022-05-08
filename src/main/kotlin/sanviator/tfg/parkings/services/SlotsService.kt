@@ -13,7 +13,6 @@ import sanviator.tfg.parkings.persistence.repositories.ParkingLotsRepository
 import sanviator.tfg.parkings.persistence.repositories.SlotsRepository
 
 
-
 @Service
 class SlotsService {
 

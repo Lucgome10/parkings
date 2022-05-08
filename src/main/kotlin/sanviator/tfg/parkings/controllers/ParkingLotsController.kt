@@ -8,7 +8,6 @@ import sanviator.tfg.parkings.exception.ServiceException
 import sanviator.tfg.parkings.model.ParkingLotDTO
 import sanviator.tfg.parkings.services.ParkingLotsService
 
-
 @RestController
 @RequestMapping("parking_lots")
 class ParkingLotsController {

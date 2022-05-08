@@ -1,14 +1,12 @@
 package sanviator.tfg.parkings.security.filter
 
-
 import com.auth0.jwt.JWT
-import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
 import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import org.springframework.http.HttpHeaders.AUTHORIZATION
+import org.springframework.http.HttpHeaders
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.OncePerRequestFilter
@@ -30,7 +28,7 @@ class CustomAuthorizationFilter(algorithm: Algorithm): OncePerRequestFilter() {
         if (request.servletPath.equals("/auth/login") || request.servletPath.equals("/auth/refresh_token")) {
             filterChain.doFilter(request, response)
         } else {
-            val authorizationHeader = request.getHeader(AUTHORIZATION)
+            val authorizationHeader = request.getHeader(HttpHeaders.AUTHORIZATION)
             if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
                 try {
                     val token = authorizationHeader.substring("Bearer ".length)

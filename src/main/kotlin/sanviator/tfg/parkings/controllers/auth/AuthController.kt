@@ -1,6 +1,5 @@
 package sanviator.tfg.parkings.controllers.auth
 
-
 import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import com.google.gson.Gson

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component
 import sanviator.tfg.parkings.services.MqttService
 import sanviator.tfg.parkings.services.SlotsService
 
-
 @Component
 class ScheduledMqttPublish {
 
@@ -18,7 +17,7 @@ class ScheduledMqttPublish {
 
 
     // publish every 10 seconds.
-    @Scheduled (fixedRate = 10000)
+    @Scheduled(fixedRate = 10000)
     fun publishSlotsMqtt() {
         val lastSlots = slotsService.getLastSlots()
         mqttService.publishSlots(lastSlots)

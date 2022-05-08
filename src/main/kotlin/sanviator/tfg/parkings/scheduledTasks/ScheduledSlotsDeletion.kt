@@ -4,9 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 import sanviator.tfg.parkings.mappers.toEpochMilli
-import sanviator.tfg.parkings.services.MqttService
 import sanviator.tfg.parkings.services.SlotsService
-
 
 @Component
 class ScheduledSlotsDeletion {

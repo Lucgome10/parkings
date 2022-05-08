@@ -12,6 +12,6 @@ data class SlotsDAO (
     @Column(name = "idParking", nullable = false) var idParking: String? = null,
     @Column(name = "timestamp", nullable = false) var timestamp: String? = null,
     @Column(name = "totalSlots", nullable = false) var totalSlots: Int? = null,
-    @Column (name = "freeSlots", nullable = false) var freeSlots: Int? = null
-    ) {
+    @Column(name = "freeSlots", nullable = false) var freeSlots: Int? = null
+) {
 }

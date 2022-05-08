@@ -9,8 +9,8 @@ import javax.persistence.Table
 @Table(name="parking")
 data class ParkingLotDAO (
     @Id @Column(name = "id", nullable = false) var id: String? = null,
-    @Column (name = "name", nullable = false) var name: String? = null,
-    @Column (name = "city", nullable = false) var city: String? = null,
-    @Column (name = "lon", nullable = false) var lon: Double? = null,
-    @Column (name = "lat", nullable = false) var lat: Double? = null) {
+    @Column(name = "name", nullable = false) var name: String? = null,
+    @Column(name = "city", nullable = false) var city: String? = null,
+    @Column(name = "lon", nullable = false) var lon: Double? = null,
+    @Column(name = "lat", nullable = false) var lat: Double? = null) {
 }

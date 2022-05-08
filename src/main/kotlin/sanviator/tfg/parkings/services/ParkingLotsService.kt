@@ -10,7 +10,6 @@ import sanviator.tfg.parkings.mappers.toParkingLotDTO
 import sanviator.tfg.parkings.model.ParkingLotDTO
 import sanviator.tfg.parkings.persistence.repositories.ParkingLotsRepository
 
-
 @Service
 class ParkingLotsService {
 

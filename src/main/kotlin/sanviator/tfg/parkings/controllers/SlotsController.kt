@@ -11,8 +11,6 @@ import sanviator.tfg.parkings.services.MqttService
 import sanviator.tfg.parkings.services.SlotsService
 
 
-
-
 @RestController
 @RequestMapping("slots_available")
 class SlotsController {
